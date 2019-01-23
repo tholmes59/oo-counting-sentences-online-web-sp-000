@@ -27,7 +27,7 @@ class String
   end
 
   def count_sentences
-    sentence = self.split(/['.']/) || self.split(/['?']/) || self.split(/['!']/)
+    sentence = self.split(/['.']/) && self.split(/['?']/) && self.split(/['!']/)
     number_of_sentences = sentence.reject {|sentence| sentence.empty?}
     number_of_sentences.count
   end
