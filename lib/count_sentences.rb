@@ -31,5 +31,5 @@ class String
     number_of_sentences = sentence.reject {|empty_string| empty_string.empty?}
     number_of_sentences.count
   end
-binding.pry
+
 end
